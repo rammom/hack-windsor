@@ -1,0 +1,160 @@
+<html>
+	<%- include('partials/head') %>
+
+	<body>
+		<%- include('partials/nav') %>
+		<div class="landing" style="height: 100%">
+			<img src="/images/cloud1.png" class="cloud1">
+			<img src="/images/cloud2.png" class="cloud2">			
+			<img src="/images/cloud3.png" class="cloud3">	
+			<img src="/images/bridge.png" class="bridge">
+			<h1 class="right-align title">HACK&emsp;&emsp; <br> WINDSOR</h1>
+			<form action="" method="post" class="my-form">
+				<div class="form-group">
+					<label for="email">Enter your email to be notified when applications begin!</label>
+					<input type="email" class="form-control" id="email-input" placeholder="you@somewherecool.com">
+				</div>
+				<button class="btn btn-primary right-align" type="submit">Submit</button>
+			</form>
+			<a href="#about"><img src="/images/down.png" class="down"></a>
+		</div>
+		<div class="about" style="height:100%">
+			<h4 id="about">About Us</h4>
+		</div>
+	</body>
+	
+</html>
+
+<style>
+	body {
+		background: rgb(255,196,0); /* Old browsers */
+		background: -moz-linear-gradient(to bottom, rgba(255,196,0,0.3) 0%, rgba(28,188,236,0.3) 42%, rgba(28,188,236,0.3) 42%, rgba(28,188,236,0.3) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(135deg, rgba(255,196,0,0.15) 0%,rgba(28,188,236,0.2) 42%,rgba(28,188,236,0.2) 42%,rgba(28,188,236,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg, rgba(255,196,0,0.15) 0%,rgba(28,188,236,0.2) 42%,rgba(28,188,236,0.2) 42%,rgba(28,188,236,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc400', endColorstr='#1cbcec',GradientType=0 ); /* IE6-9 */
+	}
+	h1 {
+		font-family: Passion One;
+		font-size: 100px;
+	}
+	.right-align {
+		text-align: right;
+	}
+	.title {
+		position: absolute;
+		right: 5%;
+		top: 30%;
+	}
+	.my-form {
+		position: absolute;
+		right: 3%;
+		top: 75%;
+		width: 40%;
+	}
+	.down {	
+		position: absolute;
+		max-height: 10vh;
+		right: 3%;
+		bottom: 3%;
+		-webkit-animation: down-arrow 1s infinite; /* Safari 4+ */
+  		-moz-animation:    down-arrow 1s infinite; /* Fx 5+ */
+  		-o-animation:      down-arrow 1s infinite; /* Opera 12+ */
+		animation:         down-arrow 1s infinite; /* IE 10+, Fx 29+ */
+	}
+	.down:hover {
+		-webkit-animation: down-arrow-hover 1s; /* Safari 4+ */
+  		-moz-animation:    down-arrow-hover 1s; /* Fx 5+ */
+  		-o-animation:      down-arrow-hover 1s; /* Opera 12+ */
+		animation:         down-arrow-hover 1s; /* IE 10+, Fx 29+ */
+	}
+	.bridge {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.cloud1 {
+		max-width: 20vw;
+		position: absolute;
+		-webkit-animation: move-cloud1 120s infinite; /* Safari 4+ */
+  		-moz-animation:    move-cloud1 120s infinite; /* Fx 5+ */
+  		-o-animation:      move-cloud1 120s infinite; /* Opera 12+ */
+		animation:         move-cloud1 120s infinite; /* IE 10+, Fx 29+ */
+		animation-timing-function: linear; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+		z-index: -1;		
+	}
+	.cloud2 {
+		max-width: 17vw;
+		position: absolute;
+		-webkit-animation: move-cloud2 40s infinite; /* Safari 4+ */
+  		-moz-animation:    move-cloud2 40s infinite; /* Fx 5+ */
+  		-o-animation:      move-cloud2 40s infinite; /* Opera 12+ */
+		animation:         move-cloud2 40s infinite; /* IE 10+, Fx 29+ */
+		animation-timing-function: linear; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+		z-index: -1;		
+	}
+	.cloud3 {
+		max-width: 17vw;
+		position: absolute;
+		-webkit-animation: move-cloud3 70s infinite; /* Safari 4+ */
+  		-moz-animation:    move-cloud3 70s infinite; /* Fx 5+ */
+  		-o-animation:      move-cloud3 70s infinite; /* Opera 12+ */
+		animation:         move-cloud3 70s infinite; /* IE 10+, Fx 29+ */
+		animation-timing-function: linear; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */		
+	}
+
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes move-cloud1 {
+		0% {left: 0%; top: 5%; opacity: 0}
+		5% {left: 5%; top: 6.5%; opacity: 0.5}		
+		10% {left: 10%; top: 8%; opacity: 1}	
+		20% {left: 20%; top: 5%; opacity: 1}
+		30% {left: 30%; top: 8%; opacity: 1}
+		40% {left: 40%; top: 5%; opacity: 1}
+		50% {left: 50%; top: 8%; opacity: 1}
+		60% {left: 60%; top: 5%; opacity: 0.5}
+		70% {left: 70%; top: 8%; opacity: 0}
+		80% {left: 80%; top: 5%; opacity: 0}
+		90% {left: 80%; top: 8%; opacity: 0}
+		100% {left: 80%; top: 5%; opacity: 0}
+	}
+	@-webkit-keyframes move-cloud2 {
+		0% {left: 0%; top: 13%; opacity: 0}
+		5% {left: 5%; top: 15%; opacity: 0.5}		
+		10% {left: 10%; top: 18%; opacity: 1}	
+		20% {left: 20%; top: 15%; opacity: 1}
+		30% {left: 30%; top: 13%; opacity: 1}
+		40% {left: 40%; top: 18%; opacity: 1}
+		50% {left: 50%; top: 15%; opacity: 1}
+		60% {left: 60%; top: 13%; opacity: 0.5}
+		70% {left: 70%; top: 18%; opacity: 0}
+		80% {left: 80%; top: 15%; opacity: 0}
+		90% {left: 80%; top: 13%; opacity: 0}
+		100% {left: 80%; top: 18%; opacity: 0}
+	}
+	@-webkit-keyframes move-cloud3 {
+		0% {left: 0%; top: 15%; opacity: 0}
+		5% {left: 5%; top: 15.5%; opacity: 0.5}		
+		10% {left: 10%; top: 16%; opacity: 1}	
+		20% {left: 20%; top: 15%; opacity: 1}
+		30% {left: 30%; top: 14%; opacity: 1}
+		40% {left: 40%; top: 15%; opacity: 1}
+		50% {left: 50%; top: 16%; opacity: 1}
+		60% {left: 60%; top: 15%; opacity: 0.5}
+		70% {left: 70%; top: 14%; opacity: 0}
+		80% {left: 80%; top: 15%; opacity: 0}
+		90% {left: 80%; top: 16%; opacity: 0}
+		100% {left: 80%; top: 15%; opacity: 0}
+	}
+	@-webkit-keyframes down-arrow {
+		0% {bottom: 3%}
+		50% {bottom: 4%}
+		100% {bottom: 3%}
+	}
+	@-webkit-keyframes down-arrow-hover {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+</style>
