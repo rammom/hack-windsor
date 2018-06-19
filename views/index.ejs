@@ -17,7 +17,7 @@
 				</h1>
 				<form action="" method="post" class="my-form">
 					<div class="form-group">
-						<label for="email">Enter your email to be notified when applications begin!</label>
+						<label for="email" class="form-text">Enter your email to be notified when applications begin!</label>
 						<input type="email" class="form-control" id="email-input" placeholder="Email Address">
 					</div>
 					<button class="btn btn-primary right-align" type="submit">Submit</button>
@@ -54,11 +54,18 @@
 		left: 50%;
 		bottom: 3%;
 	}
+	.form-text {
+		color: white
+	}
 	.my-form {
 		position: absolute;
 		right: 3%;
-		top: 60%;
+		top: 55%;
 		width: 20%;
+		padding: 30px 10px 30px 10px;
+		border: 3px solid black;
+		border-radius: 10px;
+		background:rgb(109, 108, 108);
 	}
 	.down {	
 		position: absolute;
